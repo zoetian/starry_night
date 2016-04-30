@@ -1,0 +1,51 @@
+@font-face {
+  font-family: 'Dodger';
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/442915/good_times_rg.ttf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  background: #0C2032;
+}
+
+#starfield {
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: 0;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.star {
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/442915/star_copy.png");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  position: absolute;
+  opacity: 1;
+}
+.star.s6 {
+  width: 20px;
+  height: 20px;
+}
+.star.s4 {
+  width: 40px;
+  height: 40px;
+}
+.star.s2 {
+  width: 60px;
+  height: 60px;
+}
+
+#wrapper {
+  position: relative;
+}
+
+html, body, #wrapper {
+  height: 100%;
+  min-height: 100%;
+  overflow: hidden;
+}
+
